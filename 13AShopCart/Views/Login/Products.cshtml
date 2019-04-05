@@ -1,7 +1,12 @@
-﻿
+﻿@using _13AShopCart.Controllers;
 @{
     ViewBag.Title = "Products";
 }
 
 <h2>Products Page</h2>
 
+
+@using (Html.BeginForm("Index", "Logout", FormMethod.Post))
+{
+ <td colspan="2" align="right"><input type="submit" value="Logout"></td>
+}
